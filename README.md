@@ -3,15 +3,19 @@
 ```
 docker build . -t rest-quick-launcher
 ```
-2. Prepare the files
+2. Prepare the configuration files in <CONFIG_DIR>
 ```
 .
-├── dctm-rest.war
 ├── dfc.properties
 └── rest-api-runtime.properties
 ```
+3. Prepare the WAR file in <WAR_DIR>
+```
+.
+└── dctm-rest.war
+```
 
-3. Run the container 
+4. Run the container 
 ```
 docker run -it -p 8888:8080 --rm -v `pwd`:/tmp rest-quick-launcher
 ```
