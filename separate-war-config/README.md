@@ -1,7 +1,7 @@
 # rest-quick-launcher
 1. Build the image
 ```
-docker build . -t rest-quick-launcher
+docker build . -t rest-quick-launcher:separate-war-config
 ```
 2. Prepare the configuration files in <CONFIG_DIR>
 ```
@@ -17,5 +17,5 @@ docker build . -t rest-quick-launcher
 
 4. Run the container 
 ```
-docker run -it -p 8888:8080 --rm -v <CONFIG_DIR>:/tmp/config -v <WAR_DIR>:/tmp/war rest-quick-launcher
+docker run -it -p 8888:8080 --rm -v <CONFIG_DIR>:/tmp/config -v <WAR_DIR>:/tmp/war rest-quick-launcher:separate-war-config
 ```
