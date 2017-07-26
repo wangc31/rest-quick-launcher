@@ -17,5 +17,5 @@ docker build . -t rest-quick-launcher
 
 4. Run the container 
 ```
-docker run -it -p 8888:8080 --rm -v `pwd`:/tmp rest-quick-launcher
+docker run -it -p 8888:8080 --rm -v <CONFIG_DIR>:/tmp/config -v <WAR_DIR>:/tmp/war rest-quick-launcher
 ```
