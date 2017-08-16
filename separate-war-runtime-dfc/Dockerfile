@@ -1,4 +1,4 @@
-FROM tomcat:8-jre8-alpine
+FROM tomcat:8.0-jre8-alpine
 
 MAINTAINER Chen Wang <chen.wang@emc.com>
 
