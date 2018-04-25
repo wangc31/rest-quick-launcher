@@ -2,6 +2,7 @@ FROM tomcat:8.0-jre8-alpine
 
 MAINTAINER Chen Wang <chen.wang@emc.com>
 
+ENV REST_TMP /tmp
 ENV REST_WAR_TMP /tmp/war
 ENV REST_CONFIG_TMP /tmp/config
 ENV DCTM_REST_HOME ${CATALINA_HOME}/webapps/dctm-rest
